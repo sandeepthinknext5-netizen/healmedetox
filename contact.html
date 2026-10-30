@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Healmedetox | Personalised Nutrition Guidance</title>
+<meta name="description" content="Contact Healmedetox to ask about personalised diet programs, nutrition guidance and the next step for your health goals.">
+<meta name="theme-color" content="#014e4e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="contact.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="contact-page">
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="brand" aria-label="Healmedetox home">
+      <img src="heal-logo-light.png" alt="" class="logo logo-light" width="1776" height="400">
+      <img src="heal-logo-dark.png" alt="" class="logo logo-dark" width="1776" height="400">
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-dropdown">
+          <a href="index.html#services" aria-haspopup="true">Programs <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            <li><a href="weight-gain.html">Weight Gain</a></li>
+            <li><a href="weight-loss.html">Weight Loss</a></li>
+            <li><a href="diabetes-nutrition.html">Diabetes Nutrition</a></li>
+            <li><a href="pcod-pcos-nutrition.html">PCOD/PCOS</a></li>
+            <li><a href="cardiovascular-health.html">Cardiovascular Health</a></li>
+            <li><a href="pregnancy-post-pregnancy-nutrition.html">Pregnancy &amp; Post-Pregnancy</a></li>
+          </ul>
+        </li>
+        <li><a href="courses.html">Courses &amp; Offers</a></li>
+        <li><a href="index.html#process">Approach</a></li>
+        <li><a href="index.html#why">Why Us</a></li>
+        <li><a href="index.html#faq">FAQs</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn search-open" type="button" aria-label="Open search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <a class="call-chip" href="tel:+918872401632">
+        <span class="call-icon"><i class="fa-solid fa-phone-volume"></i></span>
+        <span class="call-text"><small>Call Anytime</small><strong>8872401632</strong></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <div class="drawer-head">
+    <a href="index.html" class="brand" aria-label="Healmedetox home">
+      <img src="heal-logo-dark.png" alt="" class="logo drawer-logo" width="1776" height="400">
+    </a>
+    <button class="drawer-close" id="drawerClose" type="button" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="drawer-nav" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <details class="drawer-programs">
+      <summary>Our Programs <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary>
+      <div class="drawer-subnav">
+        <a href="index.html#services">All Programs</a>
+        <a href="weight-gain.html">Weight Gain</a>
+        <a href="weight-loss.html">Weight Loss</a>
+        <a href="diabetes-nutrition.html">Diabetes Nutrition</a>
+        <a href="pcod-pcos-nutrition.html">PCOD/PCOS</a>
+        <a href="cardiovascular-health.html">Cardiovascular Health</a>
+        <a href="pregnancy-post-pregnancy-nutrition.html">Pregnancy &amp; Post-Pregnancy</a>
+      </div>
+    </details>
+    <a href="courses.html">Courses &amp; Offers</a>
+    <a href="index.html#process">Our Approach</a>
+    <a href="index.html#why">Why Healmedetox</a>
+    <a href="index.html#faq">FAQs</a>
+    <a href="contact.html" class="active" aria-current="page">Contact Us</a>
+  </nav>
+  <div class="drawer-contact">
+    <span>Call Healmedetox:</span>
+    <a href="tel:+918872401632">8872401632</a>
+    <p>2131, PEPSU Society, Sector 50-C</p>
+  </div>
+</aside>
+
+<div class="search-popup" id="searchPopup" aria-hidden="true">
+  <button class="search-close" id="searchClose" type="button" aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+  <form class="search-form" action="#" onsubmit="return false;">
+    <input type="search" placeholder="Search programs..." aria-label="Search">
+    <button type="submit" aria-label="Submit search"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
+</div>
+
+<main>
+  <section class="ct-hero" id="contact">
+    <span class="ct-hero-grid" aria-hidden="true"></span>
+    <span class="ct-orbit ct-orbit-one" aria-hidden="true"></span>
+    <span class="ct-orbit ct-orbit-two" aria-hidden="true"></span>
+
+    <div class="container ct-hero-inner">
+      <div class="ct-hero-copy reveal">
+        <span class="eyebrow">Contact Healmedetox</span>
+        <h1>Let's start with a <em>conversation</em>.</h1>
+        <p>Have a question about a program, a health goal or where to begin? Share what is on your mind and we will help you find a clear next step.</p>
+        <div class="ct-hero-actions">
+          <a class="btn btn-light" href="#enquiry">
+            <span class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            <span>Send an Enquiry</span>
+            <span class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+          <a class="ct-hero-call" href="tel:+918872401632">
+            <span class="ct-hero-call-icon"><i class="fa-solid fa-phone-volume"></i></span>
+            <span><small>Prefer to talk?</small><strong>8872401632</strong></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="ct-hero-media reveal">
+        <div class="ct-hero-photo">
+          <img src="https://dev266.kodesolution.com/nourio/wp-content/uploads/2026/08/no-services4.jpg" alt="Fresh healthy ingredients prepared for a meal" width="900" height="1000">
+        </div>
+        <div class="ct-hero-note">
+          <span class="ct-note-icon"><i class="fa-solid fa-comments"></i></span>
+          <span><strong>Not sure where to begin?</strong><small>Share your goal and we will help you find the right program.</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ct-methods">
+    <div class="container ct-methods-grid">
+      <a class="ct-method reveal" href="tel:+918872401632">
+        <span class="ct-method-icon"><i class="fa-solid fa-phone-volume"></i></span>
+        <span class="ct-method-body">
+          <small>Call Healmedetox</small>
+          <strong>8872401632</strong>
+          <p>Speak directly with Mr Amarjit about your health goals.</p>
+        </span>
+        <i class="ct-method-arrow fa-solid fa-arrow-right"></i>
+      </a>
+
+      <a class="ct-method reveal" href="https://www.google.com/maps/search/?api=1&amp;query=2131%20PEPSU%20Society%20Sector%2050-C" target="_blank" rel="noopener">
+        <span class="ct-method-icon"><i class="fa-solid fa-location-dot"></i></span>
+        <span class="ct-method-body">
+          <small>Visit us</small>
+          <strong>2131, PEPSU Society</strong>
+          <p>Sector 50-C, at a time arranged with us.</p>
+        </span>
+        <i class="ct-method-arrow fa-solid fa-arrow-right"></i>
+      </a>
+
+      <div class="ct-method reveal">
+        <span class="ct-method-icon"><i class="fa-solid fa-paper-plane"></i></span>
+        <span class="ct-method-body">
+          <small>Send an enquiry</small>
+          <strong>Share your details</strong>
+          <p>Use the form below and we will get back to you with a next step.</p>
+        </span>
+        <i class="ct-method-arrow fa-solid fa-arrow-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <section class="ct-enquiry" id="enquiry">
+    <div class="container ct-enquiry-grid">
+      <div class="ct-enquiry-copy reveal">
+        <span class="eyebrow">Start a conversation</span>
+        <h2 class="section-title">Tell us a little about your health goals.</h2>
+        <p>Whether you are looking for support with weight management, diabetes, PCOD/PCOS, heart health or pregnancy nutrition, a short conversation can help you understand the right next step.</p>
+
+        <div class="ct-next">
+          <div>
+            <span>01</span>
+            <p><strong>You share your details</strong>Tell us about your health priorities and everyday routine.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <p><strong>We review your enquiry</strong>We help identify the program or guidance that may fit your needs.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <p><strong>We get in touch</strong>We follow up using the contact details you provide.</p>
+          </div>
+        </div>
+
+        <div class="ct-direct">
+          <span>Prefer a direct conversation?</span>
+          <a href="tel:+918872401632"><i class="fa-solid fa-phone"></i> 8872401632</a>
+        </div>
+      </div>
+
+      <div class="ct-form-card reveal">
+        <span class="ct-form-kicker">Enquiry form</span>
+        <h3>How can we help?</h3>
+        <p>Fill in your details and tell us what you would like support with.</p>
+
+        <form class="contact-form ct-form" id="contactForm">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Name" aria-label="Name" autocomplete="name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" aria-label="Phone Number" autocomplete="tel" required>
+          </div>
+          <input type="email" name="email" placeholder="Email Address" aria-label="Email Address" autocomplete="email" required>
+          <label class="ct-select">
+            <select name="program" aria-label="What would you like help with?" required>
+              <option value="" selected disabled>What would you like help with?</option>
+              <option>Weight Gain Nutrition</option>
+              <option>Weight Loss &amp; Management</option>
+              <option>Diabetes Nutrition</option>
+              <option>PCOD/PCOS Nutrition</option>
+              <option>Cardiovascular Health</option>
+              <option>Pregnancy &amp; Post-Pregnancy Nutrition</option>
+              <option>General Enquiry</option>
+            </select>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </label>
+          <textarea name="message" rows="5" placeholder="Tell us about your health goals" aria-label="Tell us about your health goals" required></textarea>
+          <button class="btn btn-yellow" type="submit">
+            <span class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            <span>Send Enquiry</span>
+            <span class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+          <p class="form-success" id="formSuccess" role="status" aria-live="polite">Thank you! Your enquiry has been received. We will get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="ct-location">
+    <div class="container ct-location-grid">
+      <div class="ct-map-panel reveal">
+        <iframe src="https://www.google.com/maps?q=2131%20PEPSU%20Society%2C%20Sector%2050-C&amp;output=embed" title="Map showing Healmedetox at 2131, PEPSU Society, Sector 50-C" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="ct-map-label">
+          <span><i class="fa-solid fa-location-dot"></i></span>
+          <p><strong>Healmedetox</strong><small>2131, PEPSU Society, Sector 50-C</small></p>
+        </div>
+      </div>
+
+      <div class="ct-location-copy reveal">
+        <span class="eyebrow">Find us</span>
+        <h2 class="section-title">Visit us in Sector 50-C.</h2>
+        <p>Reach out before visiting so we can plan a convenient time to speak with you.</p>
+
+        <div class="ct-location-list">
+          <div>
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <p><small>Address</small><strong>2131, PEPSU Society, Sector 50-C</strong></p>
+          </div>
+          <div>
+            <span><i class="fa-solid fa-user"></i></span>
+            <p><small>Your contact</small><strong>Mr Amarjit</strong></p>
+          </div>
+          <div>
+            <span><i class="fa-solid fa-phone"></i></span>
+            <p><small>Phone</small><a href="tel:+918872401632">8872401632</a></p>
+          </div>
+        </div>
+
+        <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=2131%20PEPSU%20Society%20Sector%2050-C" target="_blank" rel="noopener">
+          <span class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          <span>Get Directions</span>
+          <span class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-panel">
+    <div class="container">
+      <div class="footer-word" aria-hidden="true">Healmedetox</div>
+
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <img src="heal-logo-light.png" alt="Healmedetox" class="footer-about-logo" width="1776" height="400">
+          <p>Personalized diet plans for better health. Supporting healthier eating habits through nutrition programs for weight management, diabetes, PCOD/PCOS, cardiovascular wellness, pregnancy and post-pregnancy nutrition.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#services">Our Programs</a></li>
+            <li><a href="index.html#faq">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Our Programs</h3>
+          <ul class="footer-links">
+            <li><a href="weight-gain.html">Weight Gain</a></li>
+            <li><a href="weight-loss.html">Weight Loss</a></li>
+            <li><a href="diabetes-nutrition.html">Diabetes Nutrition</a></li>
+            <li><a href="pcod-pcos-nutrition.html">PCOD/PCOS</a></li>
+            <li><a href="cardiovascular-health.html">Cardiovascular Health</a></li>
+            <li><a href="pregnancy-post-pregnancy-nutrition.html">Pregnancy &amp; Post-Pregnancy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3>Contact</h3>
+          <p><i class="fa-solid fa-user"></i> Mr Amarjit</p>
+          <p><i class="fa-solid fa-phone"></i> <a href="tel:+918872401632">8872401632</a></p>
+          <p><i class="fa-solid fa-location-dot"></i> 2131, PEPSU Society,<br>Sector 50-C</p>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer">
+        <p><strong>Disclaimer:</strong> The information provided on this website is for general educational purposes only and does not replace professional medical advice, diagnosis, or treatment. Individual dietary requirements vary. Nutrition plans for medical conditions and pregnancy should be developed with appropriately qualified healthcare professionals.</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Healmedetox. All rights reserved. | Designed by <a href="https://www.thinknext.co.in/" target="_blank" rel="noopener noreferrer">ThinkNEXT Technologies Private Limited</a></p>
+        <div class="footer-legal">
+          <a href="index.html#contact">Terms &amp; Condition</a>
+          <a href="index.html#contact">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

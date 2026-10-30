@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz | Healmedetox</title>
+<meta name="description" content="Take our nutrition quiz to find your ideal diet plan at Healmedetox.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="quiz.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="quiz-page-body">
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="brand" aria-label="Healmedetox home">
+      <img src="heal-logo-light.png" alt="" class="logo logo-light" width="1776" height="400">
+      <img src="heal-logo-dark.png" alt="" class="logo logo-dark" width="1776" height="400">
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-dropdown">
+          <a href="index.html#services" aria-haspopup="true">Programs <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            <li><a href="weight-gain.html">Weight Gain</a></li>
+            <li><a href="weight-loss.html">Weight Loss</a></li>
+            <li><a href="diabetes-nutrition.html">Diabetes Nutrition</a></li>
+            <li><a href="pcod-pcos-nutrition.html">PCOD/PCOS</a></li>
+            <li><a href="cardiovascular-health.html">Cardiovascular Health</a></li>
+            <li><a href="pregnancy-post-pregnancy-nutrition.html">Pregnancy &amp; Post-Pregnancy</a></li>
+          </ul>
+        </li>
+        <li><a href="courses.html">Courses &amp; Offers</a></li>
+        <li><a href="index.html#process">Approach</a></li>
+        <li><a href="index.html#why">Why Us</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn search-open" type="button" aria-label="Open search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <a class="call-chip" href="tel:+918872401632">
+        <span class="call-icon"><i class="fa-solid fa-phone-volume"></i></span>
+        <span class="call-text"><small>Call Anytime</small><strong>8872401632</strong></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <div class="drawer-head">
+    <a href="index.html" class="brand" aria-label="Healmedetox home">
+      <img src="heal-logo-dark.png" alt="" class="logo drawer-logo" width="1776" height="400">
+    </a>
+    <button class="drawer-close" id="drawerClose" type="button" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="drawer-nav" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <details class="drawer-programs">
+      <summary>Our Programs <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary>
+      <div class="drawer-subnav">
+        <a href="index.html#services">All Programs</a>
+        <a href="weight-gain.html">Weight Gain</a>
+        <a href="weight-loss.html">Weight Loss</a>
+        <a href="diabetes-nutrition.html">Diabetes Nutrition</a>
+        <a href="pcod-pcos-nutrition.html">PCOD/PCOS</a>
+        <a href="cardiovascular-health.html">Cardiovascular Health</a>
+        <a href="pregnancy-post-pregnancy-nutrition.html">Pregnancy &amp; Post-Pregnancy</a>
+      </div>
+    </details>
+    <a href="courses.html">Courses &amp; Offers</a>
+    <a href="index.html#process">Our Approach</a>
+    <a href="index.html#why">Why Healmedetox</a>
+    <a href="faq.html">FAQs</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  <div class="drawer-contact">
+    <span>Call Healmedetox:</span>
+    <a href="tel:+918872401632">8872401632</a>
+    <p>2131, PEPSU Society, Sector 50-C</p>
+  </div>
+</aside>
+
+<div class="search-popup" id="searchPopup" aria-hidden="true">
+  <button class="search-close" id="searchClose" type="button" aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+  <form class="search-form" action="#" onsubmit="return false;">
+    <input type="search" placeholder="Search programs..." aria-label="Search">
+    <button type="submit" aria-label="Submit search"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
+</div>
+
+<main>
+  <section class="quiz-intro">
+    <div class="container">
+      <div class="quiz-intro-copy">
+        <span class="eyebrow">A healthier you starts here</span>
+        <h1>Find your ideal <em>nutrition plan</em></h1>
+        <p>Answer a few quick questions about your goals and routine. We’ll help you take the next step toward better health.</p>
+        <div class="quiz-intro-actions">
+          <a class="quiz-start-button" href="#quizPage">
+            <span>Start the quiz</span>
+            <span class="quiz-start-arrow"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></span>
+          </a>
+          <div class="quiz-intro-note">
+            <span class="quiz-intro-icon"><i class="fa-solid fa-leaf" aria-hidden="true"></i></span>
+            <span>Personalized guidance, made around you</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quiz-section">
+    <div class="container">
+      <div class="quiz-layout">
+        <aside class="quiz-aside">
+          <span class="quiz-aside-kicker">YOUR WELLNESS JOURNEY</span>
+          <h2>Every good plan starts with understanding you.</h2>
+          <p>There are no right or wrong answers. Share what feels right for you.</p>
+          <div class="quiz-aside-divider"></div>
+          <div class="quiz-aside-detail">
+            <span class="quiz-aside-detail-icon"><i class="fa-regular fa-clipboard" aria-hidden="true"></i></span>
+            <span><strong>4 simple questions</strong><small>About your goals and routine</small></span>
+          </div>
+          <div class="quiz-aside-detail">
+            <span class="quiz-aside-detail-icon"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></span>
+            <span><strong>Made for your needs</strong><small>A helpful place to begin</small></span>
+          </div>
+        </aside>
+
+        <div class="quiz-page" id="quizPage">
+          <div class="quiz-form-heading">
+            <span class="quiz-form-kicker">LET’S GET TO KNOW YOU</span>
+            <h2>Your nutrition snapshot</h2>
+            <p>Select one answer for each question.</p>
+          </div>
+
+          <div class="quiz-question-block">
+            <h3><span>01</span> What is your primary goal?</h3>
+            <div class="quiz-options-grid">
+              <label class="quiz-option-card"><input type="radio" name="q1" value="Weight Loss"> Weight Loss</label>
+              <label class="quiz-option-card"><input type="radio" name="q1" value="Weight Gain"> Weight Gain</label>
+              <label class="quiz-option-card"><input type="radio" name="q1" value="Diabetes Management"> Diabetes Management</label>
+              <label class="quiz-option-card"><input type="radio" name="q1" value="PCOD/PCOS"> PCOD/PCOS</label>
+              <label class="quiz-option-card"><input type="radio" name="q1" value="Pregnancy/Post-Pregnancy"> Pregnancy/Post-Pregnancy</label>
+              <label class="quiz-option-card"><input type="radio" name="q1" value="Heart Health"> Heart Health</label>
+            </div>
+          </div>
+
+          <div class="quiz-question-block">
+            <h3><span>02</span> How active are you?</h3>
+            <div class="quiz-options-grid">
+              <label class="quiz-option-card"><input type="radio" name="q2" value="Mostly sedentary"> Mostly sedentary</label>
+              <label class="quiz-option-card"><input type="radio" name="q2" value="Lightly active"> Lightly active</label>
+              <label class="quiz-option-card"><input type="radio" name="q2" value="Moderately active"> Moderately active</label>
+              <label class="quiz-option-card"><input type="radio" name="q2" value="Very active"> Very active</label>
+            </div>
+          </div>
+
+          <div class="quiz-question-block">
+            <h3><span>03</span> Do you have any dietary restrictions?</h3>
+            <div class="quiz-options-grid">
+              <label class="quiz-option-card"><input type="radio" name="q3" value="None"> None</label>
+              <label class="quiz-option-card"><input type="radio" name="q3" value="Vegetarian"> Vegetarian</label>
+              <label class="quiz-option-card"><input type="radio" name="q3" value="Lactose intolerant"> Lactose intolerant</label>
+              <label class="quiz-option-card"><input type="radio" name="q3" value="Gluten sensitive"> Gluten sensitive</label>
+              <label class="quiz-option-card"><input type="radio" name="q3" value="Other"> Other</label>
+            </div>
+          </div>
+
+          <div class="quiz-question-block">
+            <h3><span>04</span> How would you like to proceed?</h3>
+            <div class="quiz-options-grid">
+              <label class="quiz-option-card"><input type="radio" name="q4" value="Get diet plan recommendation"> Get diet plan recommendation</label>
+              <label class="quiz-option-card"><input type="radio" name="q4" value="Talk to a nutrition expert"> Talk to a nutrition expert</label>
+            </div>
+          </div>
+
+          <div class="quiz-page-actions">
+            <p class="quiz-message-page" id="quizMessagePage" role="status" aria-live="polite"></p>
+            <button class="btn btn-yellow" id="quizPageSubmit" type="button">
+              <span class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+              <span>Get My Recommendation</span>
+              <span class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-panel">
+    <div class="container">
+      <div class="footer-word" aria-hidden="true">Healmedetox</div>
+
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <img src="heal-logo-light.png" alt="Healmedetox" class="footer-about-logo" width="1776" height="400">
+          <p>Personalized diet plans for better health. Supporting healthier eating habits through nutrition programs for weight management, diabetes, PCOD/PCOS, cardiovascular wellness, pregnancy and post-pregnancy nutrition.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#services">Our Programs</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Our Programs</h3>
+          <ul class="footer-links">
+            <li><a href="weight-gain.html">Weight Gain</a></li>
+            <li><a href="weight-loss.html">Weight Loss</a></li>
+            <li><a href="diabetes-nutrition.html">Diabetes Nutrition</a></li>
+            <li><a href="pcod-pcos-nutrition.html">PCOD/PCOS</a></li>
+            <li><a href="cardiovascular-health.html">Cardiovascular Health</a></li>
+            <li><a href="pregnancy-post-pregnancy-nutrition.html">Pregnancy &amp; Post-Pregnancy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3>Contact</h3>
+          <p><i class="fa-solid fa-user"></i> Mr Amarjit</p>
+          <p><i class="fa-solid fa-phone"></i> <a href="tel:+918872401632">8872401632</a></p>
+          <p><i class="fa-solid fa-location-dot"></i> 2131, PEPSU Society,<br>Sector 50-C</p>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer">
+        <p><strong>Disclaimer:</strong> The information provided on this website is for general educational purposes only and does not replace professional medical advice, diagnosis, or treatment. Individual dietary requirements vary. Nutrition plans for medical conditions and pregnancy should be developed with appropriately qualified healthcare professionals.</p>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy-wrap">
+          <span>&copy; 2026 Healmedetox. All rights reserved.</span>
+          <span class="footer-copy-sep">|</span>
+          <span>Designed by <a href="https://www.thinknext.co.in/" target="_blank" rel="noopener noreferrer">ThinkNEXT Technologies Private Limited</a></span>
+        </div>
+        <div class="footer-legal">
+          <a href="contact.html">Terms &amp; Condition</a>
+          <a href="contact.html">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  (function() {
+    const quizPageSubmit = document.getElementById("quizPageSubmit");
+    const quizMessagePage = document.getElementById("quizMessagePage");
+    
+    function getAnswer(name) {
+      const checked = document.querySelector('input[name="' + name + '"]:checked');
+      return checked ? checked.value : "";
+    }
+    
+    if (quizPageSubmit) {
+      quizPageSubmit.addEventListener("click", function() {
+        const answers = {
+          goal: getAnswer("q1"),
+          activity: getAnswer("q2"),
+          diet: getAnswer("q3"),
+          next: getAnswer("q4")
+        };
+        
+        const missing = [];
+        if (!answers.goal) missing.push("goal");
+        if (!answers.activity) missing.push("activity");
+        if (!answers.diet) missing.push("diet");
+        if (!answers.next) missing.push("next step");
+        
+        if (missing.length) {
+          if (quizMessagePage) {
+            quizMessagePage.textContent = "Please answer all questions before continuing.";
+            quizMessagePage.classList.add("show");
+          }
+          return;
+        }
+        
+        if (quizMessagePage) {
+          quizMessagePage.textContent = "";
+          quizMessagePage.classList.remove("show");
+        }
+        
+        const summary = [
+          "Nutrition quiz answers:",
+          "1. Goal: " + answers.goal,
+          "2. Activity level: " + answers.activity,
+          "3. Dietary restriction: " + answers.diet,
+          "4. I would like to: " + answers.next
+        ].join("\n");
+        
+        try {
+          sessionStorage.setItem("healmedetoxQuiz", summary);
+        } catch (err) {}
+        window.location.href = "contact.html#contact";
+      });
+    }
+  })();
+</script>
+</body>
+</html>

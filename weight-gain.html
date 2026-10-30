@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weight Gain Nutrition Program | Healmedetox</title>
+<meta name="description" content="A personalised weight gain nutrition program focused on nourishing meals, adequate protein, steady progress and practical routines.">
+<meta name="theme-color" content="#014e4e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="program.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="program-page">
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="brand" aria-label="Healmedetox home">
+      <img src="heal-logo-light.png" alt="" class="logo logo-light" width="1776" height="400">
+      <img src="heal-logo-dark.png" alt="" class="logo logo-dark" width="1776" height="400">
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-dropdown">
+          <a href="index.html#services" aria-haspopup="true">Programs <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            <li><a href="weight-gain.html" class="active" aria-current="page">Weight Gain</a></li>
+            <li><a href="weight-loss.html">Weight Loss</a></li>
+            <li><a href="diabetes-nutrition.html">Diabetes Nutrition</a></li>
+            <li><a href="pcod-pcos-nutrition.html">PCOD/PCOS</a></li>
+            <li><a href="cardiovascular-health.html">Cardiovascular Health</a></li>
+            <li><a href="pregnancy-post-pregnancy-nutrition.html">Pregnancy &amp; Post-Pregnancy</a></li>
+          </ul>
+        </li>
+        <li><a href="courses.html">Courses &amp; Offers</a></li>
+        <li><a href="index.html#process">Approach</a></li>
+        <li><a href="index.html#why">Why Us</a></li>
+        <li><a href="index.html#faq">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn search-open" type="button" aria-label="Open search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <a class="call-chip" href="tel:+918872401632">
+        <span class="call-icon"><i class="fa-solid fa-phone-volume"></i></span>
+        <span class="call-text"><small>Call Anytime</small><strong>8872401632</strong></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <div class="drawer-head">
+    <a href="index.html" class="brand" aria-label="Healmedetox home">
+      <img src="heal-logo-dark.png" alt="" class="logo drawer-logo" width="1776" height="400">
+    </a>
+    <button class="drawer-close" id="drawerClose" type="button" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="drawer-nav" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <details class="drawer-programs" open>
+      <summary>Our Programs <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary>
+      <div class="drawer-subnav">
+        <a href="index.html#services">All Programs</a>
+        <a href="weight-gain.html" class="active" aria-current="page">Weight Gain</a>
+        <a href="weight-loss.html">Weight Loss</a>
+        <a href="diabetes-nutrition.html">Diabetes Nutrition</a>
+        <a href="pcod-pcos-nutrition.html">PCOD/PCOS</a>
+        <a href="cardiovascular-health.html">Cardiovascular Health</a>
+        <a href="pregnancy-post-pregnancy-nutrition.html">Pregnancy &amp; Post-Pregnancy</a>
+      </div>
+    </details>
+    <a href="courses.html">Courses &amp; Offers</a>
+    <a href="index.html#process">Our Approach</a>
+    <a href="index.html#why">Why Healmedetox</a>
+    <a href="index.html#faq">FAQs</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  <div class="drawer-contact">
+    <span>Call Healmedetox:</span>
+    <a href="tel:+918872401632">8872401632</a>
+    <p>2131, PEPSU Society, Sector 50-C</p>
+  </div>
+</aside>
+
+<div class="search-popup" id="searchPopup" aria-hidden="true">
+  <button class="search-close" id="searchClose" type="button" aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+  <form class="search-form" action="#" onsubmit="return false;">
+    <input type="search" placeholder="Search programs..." aria-label="Search">
+    <button type="submit" aria-label="Submit search"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
+</div>
+
+<main>
+  <section class="pg-hero">
+    <span class="pg-hero-grid-bg" aria-hidden="true"></span>
+    <span class="pg-hero-orbit pg-orbit-one" aria-hidden="true"></span>
+    <span class="pg-hero-orbit pg-orbit-two" aria-hidden="true"></span>
+
+    <div class="container pg-hero-inner">
+      <div class="pg-hero-copy reveal">
+        <nav class="pg-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          <a href="index.html#services">Programs</a>
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          <span aria-current="page">Weight Gain</span>
+        </nav>
+        <span class="eyebrow">Healmedetox Nutrition Program</span>
+        <h1>Healthy <em>Weight Gain</em> Through Better Nutrition</h1>
+        <p>A structured, food-first plan for gaining weight steadily with nourishing meals, adequate protein and routines that fit your everyday life.</p>
+        <div class="pg-hero-actions">
+          <a class="btn btn-light" href="contact.html">
+            <span class="btn-arrow"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+            <span>Book a Consultation</span>
+            <span class="btn-arrow"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+          </a>
+          <a class="pg-call" href="tel:+918872401632">
+            <span class="pg-call-icon"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i></span>
+            <span><small>Speak with us</small><strong>8872401632</strong></span>
+          </a>
+        </div>
+        <p class="pg-hero-note"><i class="fa-solid fa-leaf" aria-hidden="true"></i> Personalised guidance built around your routine, preferences and health goals.</p>
+      </div>
+
+      <div class="pg-hero-media reveal">
+        <div class="pg-hero-photo">
+          <img src="https://dev266.kodesolution.com/nourio/wp-content/uploads/2026/08/no-services1-672x448.jpg" alt="Nourishing meal for a healthy weight gain plan" width="672" height="448">
+        </div>
+        <div class="pg-hero-card">
+          <span class="pg-hero-card-icon"><i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i></span>
+          <span><small>Program focus</small><strong>Steady, nourishing weight gain</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pg-overview">
+    <div class="container pg-overview-grid">
+      <div class="pg-overview-copy reveal">
+        <span class="eyebrow">Program Overview</span>
+        <h2 class="section-title">Gain weight without leaving nutrition behind</h2>
+        <p>Healthy weight gain is about more than adding extra calories. It means meeting your body's energy and protein needs with a balanced pattern of meals and snacks that you can follow consistently.</p>
+        <p>Your plan is built around your appetite, food preferences, medical history and daily routine. We focus on nutrient-dense choices, comfortable meal timing and gradual progress rather than quick fixes.</p>
+        <blockquote class="pg-note">
+          <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+          <p>The goal is steady progress with meals that feel satisfying, familiar and sustainable.</p>
+        </blockquote>
+      </div>
+
+      <aside class="pg-glance reveal">
+        <span class="pg-glance-kicker">Program focus</span>
+        <h3>Your plan at a glance</h3>
+        <ul class="pg-glance-list">
+        <li>
+          <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+          <div><small>Focus</small><strong>Calorie and protein adequacy</strong></div>
+        </li>
+        <li>
+          <i class="fa-solid fa-bowl-food" aria-hidden="true"></i>
+          <div><small>Approach</small><strong>Nutrient-dense meals and snacks</strong></div>
+        </li>
+        <li>
+          <i class="fa-solid fa-user" aria-hidden="true"></i>
+          <div><small>Built around</small><strong>Appetite, routine and preferences</strong></div>
+        </li>
+        <li>
+          <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
+          <div><small>Support</small><strong>Practical, step-by-step guidance</strong></div>
+        </li>
+        </ul>
+        <a class="btn btn-light" href="contact.html">
+          <span class="btn-arrow"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+          <span>Discuss This Program</span>
+          <span class="btn-arrow"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="pg-fit">
+    <div class="container">
+      <div class="pg-section-head reveal">
+        <div>
+          <span class="eyebrow">Who it is for</span>
+          <h2 class="section-title">Who this program can support</h2>
+        </div>
+        <p>Nutrition support works best when it reflects your starting point. These are some of the situations this program is designed for.</p>
+      </div>
+      <div class="pg-fit-grid">
+      <article class="pg-fit-card reveal">
+        <span class="pg-fit-number">01</span>
+        <h3>Low body weight or underweight</h3>
+        <p>If your current weight is below a comfortable range and you want structured nutrition support.</p>
+      </article>
+      <article class="pg-fit-card reveal">
+        <span class="pg-fit-number">02</span>
+        <h3>Poor appetite or low intake</h3>
+        <p>When meals feel difficult or portions are consistently smaller than your needs.</p>
+      </article>
+      <article class="pg-fit-card reveal">
+        <span class="pg-fit-number">03</span>
+        <h3>Recovery and rebuilding</h3>
+        <p>Support after illness or a period of unintentional weight loss, alongside medical advice.</p>
+      </article>
+      <article class="pg-fit-card reveal">
+        <span class="pg-fit-number">04</span>
+        <h3>Active people with higher needs</h3>
+        <p>For those who need more energy and protein to support training and daily activity.</p>
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="pg-plan">
+    <div class="container">
+      <div class="pg-plan-panel reveal">
+        <div class="pg-plan-intro">
+          <span class="eyebrow">What is included</span>
+          <h2>What your plan may include</h2>
+          <p>Your exact plan is shaped after a conversation about your needs. The guidance may include the following, adapted to your situation.</p>
+        </div>
+        <ul class="pg-check-list">
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>An initial review of your food pattern, appetite, routine and health goals</span></li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Guidance on energy-dense foods, protein sources and balanced meal combinations</span></li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Practical meal and snack ideas built around your preferences</span></li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Suggestions for grocery planning, portions and preparation</span></li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Regular review and adjustments as your appetite and needs change</span></li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Coordination with your treating doctor where a medical condition is involved</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="pg-process">
+    <div class="container">
+      <div class="pg-process-head reveal">
+        <div>
+          <span class="eyebrow">How it works</span>
+          <h2 class="section-title">A simple, supported way forward</h2>
+        </div>
+        <p>No complicated rules. We start with understanding, build a practical plan and keep refining it with you.</p>
+      </div>
+      <div class="pg-process-grid">
+        <article class="pg-process-card reveal">
+          <span>Step 01</span>
+          <h3>Understand your starting point</h3>
+          <p>We begin with your goals, food preferences, daily routine and relevant health information.</p>
+        </article>
+        <article class="pg-process-card reveal">
+          <span>Step 02</span>
+          <h3>Build a practical plan</h3>
+          <p>Your nutrition guidance is shaped around food you enjoy and changes you can realistically maintain.</p>
+        </article>
+        <article class="pg-process-card reveal">
+          <span>Step 03</span>
+          <h3>Review and adjust</h3>
+          <p>As your needs and routine change, we refine the approach with you over time.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="pg-related">
+    <div class="container">
+      <div class="pg-related-head reveal">
+        <div>
+          <span class="eyebrow">Keep exploring</span>
+          <h2 class="section-title">Explore another program</h2>
+        </div>
+        <a class="text-link" href="index.html#services">View all programs <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+      <div class="pg-related-grid">
+        <a class="pg-related-card reveal" href="diabetes-nutrition.html">
+          <div class="pg-related-image">
+            <img src="https://dev266.kodesolution.com/nourio/wp-content/uploads/2026/08/no-services3-672x448.jpg" alt="Balanced meal for diabetes nutrition support" loading="lazy" width="672" height="448">
+          </div>
+          <div class="pg-related-body">
+            <small>Nutrition Program</small>
+            <h3>Diabetes Nutrition</h3>
+            <p>Everyday meal support alongside diabetes care.</p>
+            <span class="text-link">Explore Program <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+        <a class="pg-related-card reveal" href="pcod-pcos-nutrition.html">
+          <div class="pg-related-image">
+            <img src="https://dev266.kodesolution.com/nourio/wp-content/uploads/2026/08/no-services4-672x448.jpg" alt="Colourful balanced meal for PCOD and PCOS nutrition" loading="lazy" width="672" height="448">
+          </div>
+          <div class="pg-related-body">
+            <small>Nutrition Program</small>
+            <h3>PCOD/PCOS</h3>
+            <p>Personalised nutrition support for PCOD and PCOS.</p>
+            <span class="text-link">Explore Program <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+        <a class="pg-related-card reveal" href="pregnancy-post-pregnancy-nutrition.html">
+          <div class="pg-related-image">
+            <img src="https://dev266.kodesolution.com/nourio/wp-content/uploads/2026/08/pro2.jpg" alt="Nourishing food for pregnancy and post-pregnancy nutrition" loading="lazy" width="672" height="448">
+          </div>
+          <div class="pg-related-body">
+            <small>Nutrition Program</small>
+            <h3>Pregnancy &amp; Post-Pregnancy</h3>
+            <p>Stage-aware nutrition through motherhood.</p>
+            <span class="text-link">Explore Program <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pg-cta">
+    <div class="container">
+      <div class="pg-cta-panel reveal">
+        <img class="pg-cta-mark" src="heal-logo-light.png" alt="" aria-hidden="true" width="1776" height="400">
+        <div class="pg-cta-copy">
+          <span class="eyebrow">Start a conversation</span>
+          <h2>Ready to work towards a healthier weight?</h2>
+          <p>Share your goals and current routine with Healmedetox. We will help you understand whether this program is the right fit.</p>
+        </div>
+        <div class="pg-cta-actions">
+          <a class="btn btn-light" href="contact.html">
+            <span class="btn-arrow"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+            <span>Book a Consultation</span>
+            <span class="btn-arrow"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+          </a>
+          <a class="pg-cta-phone" href="tel:+918872401632">
+            <span><i class="fa-solid fa-phone-volume" aria-hidden="true"></i></span>
+            <span><small>Speak with Healmedetox</small><strong>8872401632</strong></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-panel">
+    <div class="container">
+      <div class="footer-word" aria-hidden="true">Healmedetox</div>
+
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <img src="heal-logo-light.png" alt="Healmedetox" class="footer-about-logo" width="1776" height="400">
+          <p>Personalized diet plans for better health. Supporting healthier eating habits through nutrition programs for weight management, diabetes, PCOD/PCOS, cardiovascular wellness, pregnancy and post-pregnancy nutrition.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#services">Our Programs</a></li>
+            <li><a href="index.html#faq">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Our Programs</h3>
+          <ul class="footer-links">
+            <li><a href="weight-gain.html">Weight Gain</a></li>
+            <li><a href="weight-loss.html">Weight Loss</a></li>
+            <li><a href="diabetes-nutrition.html">Diabetes Nutrition</a></li>
+            <li><a href="pcod-pcos-nutrition.html">PCOD/PCOS</a></li>
+            <li><a href="cardiovascular-health.html">Cardiovascular Health</a></li>
+            <li><a href="pregnancy-post-pregnancy-nutrition.html">Pregnancy &amp; Post-Pregnancy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3>Contact</h3>
+          <p><i class="fa-solid fa-user"></i> Mr Amarjit</p>
+          <p><i class="fa-solid fa-phone"></i> <a href="tel:+918872401632">8872401632</a></p>
+          <p><i class="fa-solid fa-location-dot"></i> 2131, PEPSU Society,<br>Sector 50-C</p>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer">
+        <p><strong>Disclaimer:</strong> The information provided on this website is for general educational purposes only and does not replace professional medical advice, diagnosis, or treatment. Individual dietary requirements vary. Nutrition plans for medical conditions and pregnancy should be developed with appropriately qualified healthcare professionals.</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Healmedetox. All rights reserved. | Designed by <a href="https://www.thinknext.co.in/" target="_blank" rel="noopener noreferrer">ThinkNEXT Technologies Private Limited</a></p>
+        <div class="footer-legal">
+          <a href="index.html#contact">Terms &amp; Condition</a>
+          <a href="index.html#contact">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

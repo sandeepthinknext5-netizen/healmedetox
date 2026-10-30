@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nutrition Courses &amp; Offers | Healmedetox</title>
+<meta name="description" content="Explore Healmedetox nutrition programs for weight management, diabetes, PCOD/PCOS, heart health and pregnancy. Ask us about course offers and class details.">
+<meta name="theme-color" content="#014e4e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="courses.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="courses-page">
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="brand" aria-label="Healmedetox home">
+      <img src="heal-logo-light.png" alt="" class="logo logo-light" width="1776" height="400">
+      <img src="heal-logo-dark.png" alt="" class="logo logo-dark" width="1776" height="400">
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-dropdown">
+          <a href="index.html#services" aria-haspopup="true">Programs <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            <li><a href="weight-gain.html">Weight Gain</a></li>
+            <li><a href="weight-loss.html">Weight Loss</a></li>
+            <li><a href="diabetes-nutrition.html">Diabetes Nutrition</a></li>
+            <li><a href="pcod-pcos-nutrition.html">PCOD/PCOS</a></li>
+            <li><a href="cardiovascular-health.html">Cardiovascular Health</a></li>
+            <li><a href="pregnancy-post-pregnancy-nutrition.html">Pregnancy &amp; Post-Pregnancy</a></li>
+          </ul>
+        </li>
+        <li><a href="courses.html" class="active" aria-current="page">Courses &amp; Offers</a></li>
+        <li><a href="index.html#process">Approach</a></li>
+        <li><a href="index.html#why">Why Us</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn search-open" type="button" aria-label="Open search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <a class="call-chip" href="tel:+918872401632">
+        <span class="call-icon"><i class="fa-solid fa-phone-volume"></i></span>
+        <span class="call-text"><small>Call Anytime</small><strong>8872401632</strong></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <div class="drawer-head">
+    <a href="index.html" class="brand" aria-label="Healmedetox home">
+      <img src="heal-logo-dark.png" alt="" class="logo drawer-logo" width="1776" height="400">
+    </a>
+    <button class="drawer-close" id="drawerClose" type="button" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="drawer-nav" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <details class="drawer-programs" open>
+      <summary>Our Programs <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary>
+      <div class="drawer-subnav">
+        <a href="index.html#services">All Programs</a>
+        <a href="weight-gain.html">Weight Gain</a>
+        <a href="weight-loss.html">Weight Loss</a>
+        <a href="diabetes-nutrition.html">Diabetes Nutrition</a>
+        <a href="pcod-pcos-nutrition.html">PCOD/PCOS</a>
+        <a href="cardiovascular-health.html">Cardiovascular Health</a>
+        <a href="pregnancy-post-pregnancy-nutrition.html">Pregnancy &amp; Post-Pregnancy</a>
+      </div>
+    </details>
+    <a href="courses.html" class="active" aria-current="page">Courses &amp; Offers</a>
+    <a href="index.html#process">Our Approach</a>
+    <a href="index.html#why">Why Healmedetox</a>
+    <a href="faq.html">FAQs</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  <div class="drawer-contact">
+    <span>Call Healmedetox:</span>
+    <a href="tel:+918872401632">8872401632</a>
+    <p>2131, PEPSU Society, Sector 50-C</p>
+  </div>
+</aside>
+
+<div class="search-popup" id="searchPopup" aria-hidden="true">
+  <button class="search-close" id="searchClose" type="button" aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+  <form class="search-form" action="#" onsubmit="return false;">
+    <input type="search" placeholder="Search programs..." aria-label="Search">
+    <button type="submit" aria-label="Submit search"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
+</div>
+
+<main>
+  <section class="courses-hero">
+    <div class="container courses-hero-inner">
+      <div class="courses-hero-copy">
+        <nav class="courses-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          <span aria-current="page">Courses &amp; Offers</span>
+        </nav>
+        <span class="eyebrow">Find your starting point</span>
+        <h1>Nutrition courses for <em>your health goals</em></h1>
+        <p>Explore practical, personalised nutrition programs. Ask us about the current course offer, class format and schedule that fit your needs.</p>
+        <a class="btn btn-light" href="#courses">
+          <span class="btn-arrow"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+          <span>Explore Courses</span>
+          <span class="btn-arrow"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+      </div>
+      <div class="courses-hero-card" aria-label="Six nutrition programs">
+        <span class="courses-hero-icon"><i class="fa-solid fa-seedling" aria-hidden="true"></i></span>
+        <strong>Six paths to better-informed nutrition</strong>
+        <span>Choose a program to explore details and enquire about classes.</span>
+        <div class="courses-hero-count"><b>06</b><span>specialised programs</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses-list-section" id="courses">
+    <div class="container">
+      <div class="courses-heading">
+        <span class="eyebrow">Our courses</span>
+        <h2 class="section-title">Specialized nutrition &amp; wellness programs</h2>
+        <p>Explore each program’s duration, key topics and launch offer. Contact us to confirm class schedules, eligibility and current offer terms.</p>
+      </div>
+
+      <div class="courses-grid">
+        <article class="course-card">
+          <img class="course-card-image" src="https://dev266.kodesolution.com/nourio/wp-content/uploads/2026/08/no-services1-672x448.jpg" alt="Nourishing meal for a healthy weight gain plan" loading="lazy" width="672" height="448">
+          <div class="course-card-content">
+            <div class="course-card-top">
+              <span class="course-icon"><i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i></span>
+              <span class="course-duration">3 Months</span>
+            </div>
+            <h3>Weight Gain Nutrition Program</h3>
+            <p class="course-audience">Designed for: healthy weight gain, muscle-building goals and active lifestyles.</p>
+            <ul class="course-curriculum">
+              <li>Nutrition needs and balanced energy planning</li>
+              <li>Protein-rich meals and meal preparation</li>
+              <li>Tracking progress and sustainable daily habits</li>
+            </ul>
+            <div class="course-card-footer">
+              <div class="course-price">
+                <span class="course-old-price">₹4,999</span>
+                <strong>₹3,499</strong>
+                <small>Launch offer</small>
+              </div>
+              <a class="course-enquire" href="https://wa.me/918872401632?text=Hello%20Healmedetox%2C%20I%20am%20interested%20in%20the%20Weight%20Gain%20Nutrition%20Program.%20Please%20confirm%20the%20offer%2C%20class%20schedule%20and%20enrolment%20details." target="_blank" rel="noopener noreferrer">Enquire Now</a>
+            </div>
+            <a class="course-detail-link" href="weight-gain.html">View program details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <img class="course-card-image" src="https://dev266.kodesolution.com/nourio/wp-content/uploads/2026/08/no-services2-672x448.jpg" alt="Balanced meal for weight loss and weight management" loading="lazy" width="672" height="448">
+          <div class="course-card-content">
+            <div class="course-card-top">
+              <span class="course-icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></span>
+              <span class="course-duration">3 Months</span>
+            </div>
+            <h3>Weight Loss &amp; Weight Management</h3>
+            <p class="course-audience">Designed for: sustainable weight management and healthier everyday routines.</p>
+            <ul class="course-curriculum">
+              <li>Portion awareness and balanced meal planning</li>
+              <li>Understanding cravings and mindful eating habits</li>
+              <li>Practical nutrition habits to support activity</li>
+            </ul>
+            <div class="course-card-footer">
+              <div class="course-price">
+                <span class="course-old-price">₹4,999</span>
+                <strong>₹3,499</strong>
+                <small>Launch offer</small>
+              </div>
+              <a class="course-enquire" href="https://wa.me/918872401632?text=Hello%20Healmedetox%2C%20I%20am%20interested%20in%20the%20Weight%20Loss%20%26%20Weight%20Management%20program.%20Please%20confirm%20the%20offer%2C%20class%20schedule%20and%20enrolment%20details." target="_blank" rel="noopener noreferrer">Enquire Now</a>
+            </div>
+            <a class="course-detail-link" href="weight-loss.html">View program details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <img class="course-card-image" src="https://dev266.kodesolution.com/nourio/wp-content/uploads/2026/08/no-services3-672x448.jpg" alt="Balanced meal for diabetes nutrition support" loading="lazy" width="672" height="448">
+          <div class="course-card-content">
+            <div class="course-card-top">
+              <span class="course-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></span>
+              <span class="course-duration">2 Months</span>
+            </div>
+            <h3>Diabetes Nutrition Management</h3>
+            <p class="course-audience">Designed for: nutrition education alongside your clinician’s diabetes care plan.</p>
+            <ul class="course-curriculum">
+              <li>Carbohydrate awareness and meal balance</li>
+              <li>Fibre-rich foods and practical snack planning</li>
+              <li>Reading food labels and everyday meal choices</li>
+            </ul>
+            <div class="course-card-footer">
+              <div class="course-price">
+                <span class="course-old-price">₹5,999</span>
+                <strong>₹3,999</strong>
+                <small>Launch offer</small>
+              </div>
+              <a class="course-enquire" href="https://wa.me/918872401632?text=Hello%20Healmedetox%2C%20I%20am%20interested%20in%20Diabetes%20Nutrition%20Management.%20Please%20confirm%20the%20offer%2C%20class%20schedule%20and%20enrolment%20details." target="_blank" rel="noopener noreferrer">Enquire Now</a>
+            </div>
+            <a class="course-detail-link" href="diabetes-nutrition.html">View program details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <img class="course-card-image" src="https://dev266.kodesolution.com/nourio/wp-content/uploads/2026/08/no-services4-672x448.jpg" alt="Colourful balanced meal for PCOD and PCOS nutrition" loading="lazy" width="672" height="448">
+          <div class="course-card-content">
+            <div class="course-card-top">
+              <span class="course-icon"><i class="fa-solid fa-venus" aria-hidden="true"></i></span>
+              <span class="course-duration">3 Months</span>
+            </div>
+            <h3>PCOD/PCOS Nutrition Support</h3>
+            <p class="course-audience">Designed for: people seeking practical nutrition support with PCOD/PCOS.</p>
+            <ul class="course-curriculum">
+              <li>Balanced meals and fibre-rich food choices</li>
+              <li>Everyday meal planning and food preferences</li>
+              <li>Nutrition habits and cycle-aware wellbeing</li>
+            </ul>
+            <div class="course-card-footer">
+              <div class="course-price">
+                <span class="course-old-price">₹5,999</span>
+                <strong>₹3,999</strong>
+                <small>Launch offer</small>
+              </div>
+              <a class="course-enquire" href="https://wa.me/918872401632?text=Hello%20Healmedetox%2C%20I%20am%20interested%20in%20PCOD%2FPCOS%20Nutrition%20Support.%20Please%20confirm%20the%20offer%2C%20class%20schedule%20and%20enrolment%20details." target="_blank" rel="noopener noreferrer">Enquire Now</a>
+            </div>
+            <a class="course-detail-link" href="pcod-pcos-nutrition.html">View program details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <img class="course-card-image" src="https://dev266.kodesolution.com/nourio/wp-content/uploads/2026/08/no-project1.jpg" alt="Fresh ingredients for heart-conscious nutrition" loading="lazy" width="672" height="448">
+          <div class="course-card-content">
+            <div class="course-card-top">
+              <span class="course-icon"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></span>
+              <span class="course-duration">2 Months</span>
+            </div>
+            <h3>Cardiovascular Health Nutrition</h3>
+            <p class="course-audience">Designed for: heart-conscious everyday food choices and nutrition education.</p>
+            <ul class="course-curriculum">
+              <li>Understanding fats and sodium in food choices</li>
+              <li>Heart-conscious meal planning basics</li>
+              <li>Food labels and practical everyday habits</li>
+            </ul>
+            <div class="course-card-footer">
+              <div class="course-price">
+                <span class="course-old-price">₹4,999</span>
+                <strong>₹3,499</strong>
+                <small>Launch offer</small>
+              </div>
+              <a class="course-enquire" href="https://wa.me/918872401632?text=Hello%20Healmedetox%2C%20I%20am%20interested%20in%20Cardiovascular%20Health%20Nutrition.%20Please%20confirm%20the%20offer%2C%20class%20schedule%20and%20enrolment%20details." target="_blank" rel="noopener noreferrer">Enquire Now</a>
+            </div>
+            <a class="course-detail-link" href="cardiovascular-health.html">View program details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <img class="course-card-image" src="https://dev266.kodesolution.com/nourio/wp-content/uploads/2026/08/pro2.jpg" alt="Nourishing food for pregnancy and post-pregnancy nutrition" loading="lazy" width="672" height="448">
+          <div class="course-card-content">
+            <div class="course-card-top">
+              <span class="course-icon"><i class="fa-solid fa-baby" aria-hidden="true"></i></span>
+              <span class="course-duration">3 Months</span>
+            </div>
+            <h3>Pregnancy &amp; Post-Pregnancy Nutrition</h3>
+            <p class="course-audience">Designed for: nutrition education during pregnancy and postpartum recovery.</p>
+            <ul class="course-curriculum">
+              <li>Nutrient-rich food choices during pregnancy</li>
+              <li>Postpartum nourishment and recovery basics</li>
+              <li>Breastfeeding nutrition and practical meal ideas</li>
+            </ul>
+            <div class="course-card-footer">
+              <div class="course-price">
+                <span class="course-old-price">₹6,499</span>
+                <strong>₹4,499</strong>
+                <small>Launch offer</small>
+              </div>
+              <a class="course-enquire" href="https://wa.me/918872401632?text=Hello%20Healmedetox%2C%20I%20am%20interested%20in%20Pregnancy%20%26%20Post-Pregnancy%20Nutrition.%20Please%20confirm%20the%20offer%2C%20class%20schedule%20and%20enrolment%20details." target="_blank" rel="noopener noreferrer">Enquire Now</a>
+            </div>
+            <a class="course-detail-link" href="pregnancy-post-pregnancy-nutrition.html">View program details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <section class="course-pricing" aria-labelledby="coursePricingTitle">
+        <div class="course-pricing-heading">
+          <span class="eyebrow">Choose your package</span>
+          <h2 id="coursePricingTitle">Course pricing &amp; launch offers</h2>
+          <p>Compare individual programs or ask us about the all-access option.</p>
+        </div>
+        <div class="course-table-wrap">
+          <table class="course-pricing-table">
+            <thead>
+              <tr><th scope="col">Program</th><th scope="col">Duration</th><th scope="col">Standard price</th><th scope="col">Launch offer</th></tr>
+            </thead>
+            <tbody>
+              <tr><td data-label="Program">Weight Gain Nutrition Program</td><td data-label="Duration">3 Months</td><td data-label="Standard price"><s>₹4,999</s></td><td data-label="Launch offer"><strong>₹3,499</strong></td></tr>
+              <tr><td data-label="Program">Weight Loss &amp; Weight Management</td><td data-label="Duration">3 Months</td><td data-label="Standard price"><s>₹4,999</s></td><td data-label="Launch offer"><strong>₹3,499</strong></td></tr>
+              <tr><td data-label="Program">Diabetes Nutrition Management</td><td data-label="Duration">2 Months</td><td data-label="Standard price"><s>₹5,999</s></td><td data-label="Launch offer"><strong>₹3,999</strong></td></tr>
+              <tr><td data-label="Program">PCOD/PCOS Nutrition Support</td><td data-label="Duration">3 Months</td><td data-label="Standard price"><s>₹5,999</s></td><td data-label="Launch offer"><strong>₹3,999</strong></td></tr>
+              <tr><td data-label="Program">Cardiovascular Health Nutrition</td><td data-label="Duration">2 Months</td><td data-label="Standard price"><s>₹4,999</s></td><td data-label="Launch offer"><strong>₹3,499</strong></td></tr>
+              <tr><td data-label="Program">Pregnancy &amp; Post-Pregnancy Nutrition</td><td data-label="Duration">3 Months</td><td data-label="Standard price"><s>₹6,499</s></td><td data-label="Launch offer"><strong>₹4,499</strong></td></tr>
+              <tr class="course-bundle-row"><td data-label="Program"><strong>All-Access Master Pass (all 6 programs)</strong></td><td data-label="Duration">All access</td><td data-label="Standard price"><s>₹33,494</s></td><td data-label="Launch offer"><strong>₹11,999 <small>Save ₹21,495</small></strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <a class="course-enquire course-bundle-enquire" href="https://wa.me/918872401632?text=Hello%20Healmedetox%2C%20please%20confirm%20the%20All-Access%20Master%20Pass%20offer%2C%20program%20details%20and%20enrolment%20terms." target="_blank" rel="noopener noreferrer">Ask about the All-Access Pass <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </section>
+
+      <section class="course-promo" aria-labelledby="coursePromoTitle">
+        <div class="course-promo-heading">
+          <span class="course-promo-icon"><i class="fa-solid fa-gift" aria-hidden="true"></i></span>
+          <div class="course-promo-copy">
+            <span class="course-promo-kicker">A little extra for your wellness journey</span>
+            <h2 id="coursePromoTitle">Special promotional perks</h2>
+            <p>Enjoy added benefits when you enrol. Ask our team about eligibility and terms.</p>
+          </div>
+          <span class="course-promo-badge"><i class="fa-solid fa-sparkles" aria-hidden="true"></i> Enquire to unlock</span>
+        </div>
+        <ul class="course-promo-list">
+          <li>
+            <span class="course-promo-perk-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></span>
+            <span class="course-promo-perk-copy"><strong>Early bird offer</strong><span>Extra 15% off for the first 10 students</span></span>
+            <i class="fa-solid fa-arrow-up-right-from-square course-promo-perk-arrow" aria-hidden="true"></i>
+          </li>
+          <li>
+            <span class="course-promo-perk-icon"><i class="fa-solid fa-user-group" aria-hidden="true"></i></span>
+            <span class="course-promo-perk-copy"><strong>Referral bonus</strong><span>₹500 off consultations</span></span>
+            <i class="fa-solid fa-arrow-up-right-from-square course-promo-perk-arrow" aria-hidden="true"></i>
+          </li>
+          <li>
+            <span class="course-promo-perk-icon"><i class="fa-solid fa-book-open" aria-hidden="true"></i></span>
+            <span class="course-promo-perk-copy"><strong>Complimentary guides</strong><span>Pantry swaps &amp; grocery guide e-book</span></span>
+            <i class="fa-solid fa-arrow-up-right-from-square course-promo-perk-arrow" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </section>
+
+      <p class="courses-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Offers, availability and promotional terms should be confirmed with Healmedetox before enrolment. Class schedules and format are shared on enquiry. Nutrition education does not replace medical advice, diagnosis or treatment.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-panel">
+    <div class="container">
+      <div class="footer-word" aria-hidden="true">Healmedetox</div>
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <img src="heal-logo-light.png" alt="Healmedetox" class="footer-about-logo" width="1776" height="400">
+          <p>Personalized nutrition programs for weight management, diabetes, PCOD/PCOS, cardiovascular wellness, pregnancy and post-pregnancy nutrition.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses &amp; Offers</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Our Programs</h3>
+          <ul class="footer-links">
+            <li><a href="weight-gain.html">Weight Gain</a></li>
+            <li><a href="weight-loss.html">Weight Loss</a></li>
+            <li><a href="diabetes-nutrition.html">Diabetes Nutrition</a></li>
+            <li><a href="pcod-pcos-nutrition.html">PCOD/PCOS</a></li>
+            <li><a href="cardiovascular-health.html">Cardiovascular Health</a></li>
+            <li><a href="pregnancy-post-pregnancy-nutrition.html">Pregnancy &amp; Post-Pregnancy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h3>Contact</h3>
+          <p><i class="fa-solid fa-user"></i> Mr Amarjit</p>
+          <p><i class="fa-solid fa-phone"></i> <a href="tel:+918872401632">8872401632</a></p>
+          <p><i class="fa-solid fa-location-dot"></i> 2131, PEPSU Society,<br>Sector 50-C</p>
+        </div>
+      </div>
+      <div class="footer-disclaimer">
+        <p><strong>Disclaimer:</strong> The information provided on this website is for general educational purposes only and does not replace professional medical advice, diagnosis, or treatment. Individual dietary requirements vary. Nutrition plans for medical conditions and pregnancy should be developed with appropriately qualified healthcare professionals.</p>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy-wrap">
+          <span>&copy; 2026 Healmedetox. All rights reserved.</span>
+          <span class="footer-copy-sep">|</span>
+          <span>Designed by <a href="https://www.thinknext.co.in/" target="_blank" rel="noopener noreferrer">ThinkNEXT Technologies Private Limited</a></span>
+        </div>
+        <div class="footer-legal">
+          <a href="contact.html">Terms &amp; Condition</a>
+          <a href="contact.html">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
